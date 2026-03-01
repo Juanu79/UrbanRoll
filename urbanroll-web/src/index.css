@@ -1,0 +1,16 @@
+:root {
+  --azul-urbano: #05172F;
+  --verde-urbano: #70CBC2;
+  --negro-profundo: #080605;
+  --blanco: #FFFFFF;
+}
+
+body {
+  background-color: var(--azul-urbano);
+  color: var(--blanco);
+  font-family: 'Inter', sans-serif; /* O la que prefieras para lectura */
+}
+
+h1, h2, h3 {
+  color: var(--verde-urbano);
+}
