@@ -48,7 +48,7 @@ function App() {
       renderColores: true, 
       img: imgTipo, 
       onClick: () => setImgTipo(imgTipo === '/Tipografia.png' ? '/LogoLetras_Fondo.svg' : '/Tipografia.png'), 
-      desc: "La tipografía Owned fue seleccionada desde la página ffonts.net ,se puede ver como elemento principal del logotipo por su estética urbana inspirada en el graffiti y la cultura skate. Sus formas dinámicas transmiten energía, rebeldía y movimiento, pilares fundamentales de la identidad UrbanRoll." 
+      desc: "La tipografía Owned fue seleccionada desde la página ffonts.net ,se puede ver como elemento principal del logotipo por su estética urbana inspirada en los graffitis y la cultura skate. Sus formas dinámicas transmiten energía, rebeldía y movimiento, pilares fundamentales de la identidad UrbanRoll." 
     },
      { 
       id: "Estilo", 
