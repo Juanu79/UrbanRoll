@@ -20,7 +20,7 @@ function App() {
   }, []);
 
   const secciones = [
-    { id: "intro", titulo: "Cultura y Movimiento", img: "/1.svg", desc: "Urban Roll es una celebración de la libertad. Nuestra filosofía desafía la gravedad." },
+    { id: "intro", titulo: "Cultura y Movimiento", img: "/LogoOriginal_Fondo.svg", desc: "Urban Roll es una celebración de la libertad. Nuestra filosofía desafía la gravedad." },
     { id: "isotipo", titulo: "Isotipo: Dinamismo", img: "/Dinamismo.png", desc: "El skater en movimiento simboliza energía y libertad." },
     { id: "colores", titulo: "Paleta de Colores", renderColores: true, 
       img: imgColores, 
@@ -35,7 +35,7 @@ function App() {
       img: imgVariantes, 
       onClick: () => setImgVariantes(imgVariantes === '/LogoOriginal_Sinfondo.svg' ? '/LogoAlternativo.png' : '/LogoOriginal_Sinfondo.svg'),
       desc: "Haz clic para alternar versiones. Contamos con variantes horizontales y completas." },
-    { id: "restricciones", titulo: "Usos No Permitidos", img: "/4.svg", desc: "Prohibido deformar o cambiar los colores por otras que desentonen." },
+    { id: "restricciones", titulo: "Usos No Permitidos", img: "/UsosNoPermitidos.png", desc: "Prohibido deformar o cambiar los colores por otras que desentonen." },
     { id: "aplicaciones", titulo: "Aplicaciones Finales", 
       img: imgApp, 
       onClick: () => setImgApp(imgApp === '/Producto1.png' ? '/Producto2.png' : '/Producto1.png'),
