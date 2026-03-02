@@ -8,7 +8,8 @@ function App() {
   const [imgColores, setImgColores] = useState('/1.svg'); 
   const [imgTamanos, setImgTamanos] = useState('/3.svg'); 
   const [imgVariantes, setImgVariantes] = useState('/2.svg'); 
-  const [imgApp, setImgApp] = useState('/3F.svg'); 
+  const [imgApp, setImgApp] = useState('/3F.svg');
+  const [imgTipo,setImgTipo]=useState('/Tipografia.png');
   
   // Estado para la sección de Restricciones (Mal uso)
   const [esMalo, setEsMalo] = useState(false);
@@ -27,6 +28,12 @@ function App() {
       img: "/LogoOriginal_Fondo.svg", 
       desc: "Urban Roll no es solo skate; es una celebración de la libertad. Nuestra filosofía se basa en desafiar la gravedad y abrazar la energía underground de la ciudad." 
     },
+     { 
+      id: "simbolo", 
+      titulo: "Nuestro Simbolo", 
+      img: "/LogoOriginal_Sinfondo.svg", 
+      desc: "Seleccionamos el logo principal porque cuenta con las siguientes características: Ilustración(símbolo),Logotipo,Composición dinámica,Transmite la esencia de una auténtica marca de skate." 
+    },
     { 
       id: "colores", 
       titulo: "Paleta de Colores", 
@@ -34,6 +41,20 @@ function App() {
       img: imgColores, 
       onClick: () => setImgColores(imgColores === '/LogoOriginal_Fondo.svg' ? '/PaletaColores.png' : '/LogoOriginal_Fondo.svg'), 
       desc: "Basado en el Azul Urbano Profundo (#05172F), que representa el asfalto nocturno, y el Verde Urbano (#70CBC2) para aportar energía juvenil y contraste." 
+    },
+    { 
+      id: "tipografia", 
+      titulo: "Tipografia", 
+      renderColores: true, 
+      img: imgTipo, 
+      onClick: () => setImgTipo(imgTipo === '/Tipografia.png' ? '/LogoLetras_Fondo.svg' : '/Tipografia.png'), 
+      desc: "La tipografía Owned fue seleccionada desde la página ffonts.net ,se puede ver como elemento principal del logotipo por su estética urbana inspirada en el graffiti y la cultura skate. Sus formas dinámicas transmiten energía, rebeldía y movimiento, pilares fundamentales de la identidad UrbanRoll." 
+    },
+     { 
+      id: "Estilo", 
+      titulo: "Estilo visual urbano", 
+      img: "/Dinamismo.png", 
+      desc: "Usando la fotografia urbana de alto contraste para definir el estilo que tendra Urbanroll, captando la cultura del skate, brindando autenticidad y energia." 
     },
     { 
   id: "tamanos", 
@@ -48,6 +69,12 @@ function App() {
   }, 
   desc: "Para dimensiones reducidas como favicons o avatares, se debe usar únicamente el Isotipo del Skater (Símbolo) para garantizar la legibilidad. Haz clic para ver la comparativa entre versiones." 
 },
+ { 
+      id: "Planimetria", 
+      titulo: "Planimetria", 
+      img: "/Planimetria.png", 
+      desc: "Esta planimetría, diseñada en hoja milimetrada y con un estilo técnico de CAD, detalla la identidad visual de URBAN SKATE PARK, una marca con una fuerte identidad urbana y skater." 
+    },
     { 
       id: "variantes", 
       titulo: "Variantes del Logo", 
