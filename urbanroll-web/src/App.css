@@ -16,3 +16,53 @@ section {
   padding: 80px 0;
   border-bottom: 1px solid rgba(112, 203, 194, 0.2); /* Línea sutil color verde */
 }
+
+/* Estilo para las imágenes con fondo (F) */
+.img-con-fondo {
+  border-radius: 20px;
+  border: 1px solid rgba(92, 37, 198, 0.3); /* Borde sutil color Cian Urbano */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.img-con-fondo:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(92, 37, 198, 0.4);
+  filter: brightness(1.1);
+}
+
+/* Animación de entrada para las secciones */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+/* Esta clase se activará cuando la sección sea visible */
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Indicador de clic */
+.click-hint {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(92, 37, 198, 0.8);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.position-relative:hover .click-hint {
+  opacity: 1;
+}
+
+/* Mejora de la imagen al hacer clic */
+.animar-imagen:active {
+  transform: scale(0.95);
+}
